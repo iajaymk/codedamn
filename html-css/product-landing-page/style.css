@@ -3,12 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+}
 #header{
     background-color: black;
     padding: 5px 10%;
+    width: 100%;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 #header-img{
     width: 20px;
@@ -21,10 +28,89 @@
 #nav-list li{
     display: inline;
 }
-.nav-item{
+.nav-link{
     color: white;
     text-decoration: none;
     margin-right: 20px;
+}
+#overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.overview-text{
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+.overview-text h1{
+    font-size: 30px;
+    line-height: 2;
+}
+.ov-p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#price-info{
+    opacity: 0.5;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+#buy-btn{
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+}
+#iphone13{
+    width: 600px;
+}
+#pre-order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+#po-text{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+#email{
+    padding: 10px;
+    /* width: 400px; */
+    margin-bottom: 10px;
+}
+#submit{
+    padding: 10px;
+    background-color: rgb(26, 70, 26);
+    color: white;
+    border: 0;
+    font-size: 18px;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+#features h2{
+    margin-bottom: 20px;
 }
 @media only screen and (max-width:767px){
     #header-img{
@@ -32,5 +118,34 @@
     }
     #nav-bar{
         display: none;
+    }
+    .overview-text h1{
+        font-size: 25px;
+        line-height: 1;
+        margin-bottom: 15px;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .ov-p{
+        font-size: 16px;
+    }
+    #price-info{
+        font-size: 16px;
+    }
+    #iphone13{
+        width: 200px;
+    }
+    #po-text{
+        font-size: 18px;
+    }
+    #form{
+        width: 200px;
+    }
+    #submit{
+        font-size: 15px;
+    }
+    #video{
+        width: 250px;
+        height: 150px;
     }
 }
